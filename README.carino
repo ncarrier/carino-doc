@@ -1,0 +1,30 @@
+Carino is a platform for building vehicles, remotely controlled via wifi.
+It's main goals are:
+ * tend to be as open as possible, from the the software to the hardware (but
+   see note 1.)
+ * be an educative platform, with a documentation on how to build a vehicle from
+   the ground up, with various levels of reading so that the target audience can
+   be as large as possible
+ * provide completely finished, with an industry level quality
+ * bring tons of fun to everyone, starting with me :)
+
+Get the code and all the resources:
+  The carino project uses repo for gathering the different sub-projects it is
+made of.
+  TODO explain how to use it, once we have a first, working, manifest.
+  repo will dowload for you, the whole carino project, that is all the code, the
+build system, the documentation (from which this README is extracted), the
+schematics, 3D resources modelling the mechanical parts, prototypes lego
+plans...
+
+TODO explain basically the build process
+
+Notes:
+1. all the ressources produced will come with an open licence, mainly (L)GPL for
+source code, creative commons BY SA for documentation, "artistic" and other
+material. For external bits used (e.g. hardware), an effort will be made to use
+the most open solution possible, but while keeping some pragmatism. For example,
+if the pcduino3 platform will prove to fit our needs and / or be the cheapest
+solution available, we will stick with it even if it's not the most ope
+platform. If a realist drop-in candidate for replacement emerges, we will
+evaluate the possibility of changing.
