@@ -1,16 +1,26 @@
 # The carino project documentation
 
-Carino is a platform for building vehicles, remotely controlled via wifi.  
+Carino is a platform for building vehicles, remotely controlled via wifi.
 
 ## Goals
 
 * provide completely finished products, with an industry level quality
-* be an educative platform, with a documentation on how to build and hack a
-  vehicle from the ground up, with various levels of reading so that the target
-  audience can be as large as possible
-* tend to be as open as possible, from the the software to the hardware (but
-  see note 1.)
+* be an educative platform, with an universally accessible documentation
+* make everything open, from the the software to the hardware (but see note 1.)
 * bring tons of fun to everyone, starting with me :)
+
+## Current state
+
+For now, only one vehicle, a car, can be built. It's an early prototype, based
+on lego technics. The first version is yet to be published and will be, as soon
+as:
+
+1. the schematics have been published
+2. the lego plans for the prototype have been published
+3. the last known bugs have been fixed
+
+Then, the next iteration will be started, towards a feature complete vehicle and
+real mechanical parts.
 
 ## Prerequisites
 
@@ -22,45 +32,47 @@ flavors.
 On other exotic platforms, like windows, the best option should be to set up a
 virtual machine running Debian, VirtualBox can be used for this purpose and is
 free as in free speech and free beer. Please note that compilation times will
-increase, in that case.
+increase, in that kind of setup.
 
 ## Get the code and all the resource
 
-The carino project uses repo from google, for gathering the different
+The carino project uses repo from Google, for gathering the different
 sub-projects it is made of:
 
-1. Be sure to have the needed tools:  
+1. Be sure to have the needed tools:
 
         # apt-get install curl git
 
-2. Get repo from the [Android Open Source project][aosp-repo] :  
+2. Get repo from the [Android Open Source project][aosp-repo] :
 
         $ mkdir -p ~/bin
         $ PATH=~/bin:$PATH
         $ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
         $ chmod a+x ~/bin/repo
 
-3. Create and initialize your workspace:  
+3. Create and initialize your workspace:
 
         $ mkdir carino
         $ cd carino
         $ repo init -u https://github.com/ncarrier/carino-manifest
 
-4. Get the source (and a cup of coffee):  
+4. Get the source (and a cup of coffee):
 
         $ repo sync
+        $ cd packages/adbd
+        $ git submodule init
+        $ git submodule update
 
-Repo will dowload for you, the whole carino project, that is all the code, the
+Repo will download for you, the whole carino project, that is all the code, the
 build system, the documentation (from which this README is extracted), the
-schematics, 3D resources modelling the mechanical parts, prototypes lego
+schematics, 3D resources modelling the mechanical parts, prototype lego
 plans...  
 From now on, each command will assume the working directory to be that of your
 carino workspace. ~/bin is assumed to be in your PATH environment too.
 
 ## Hack the code
 
-1. Add the needed repositories you will need to add the following lines to your
-   /etc/apt/sources.list file:
+1. You will need to add the following lines to your /etc/apt/sources.list file:
 
 > \# cross compilation toolchain  
   deb http://www.emdebian.org/debian/ sid main  
@@ -69,7 +81,7 @@ carino workspace. ~/bin is assumed to be in your PATH environment too.
 > \# for adb  
   deb http://http.debian.net/debian wheezy-backports main  
 
-2. Install the needed tool for building the software:
+2. Install the needed tools for building the software:
 
         # apt-get update
         # apt-get install colormake \
@@ -126,19 +138,18 @@ carino workspace. ~/bin is assumed to be in your PATH environment too.
 
         $ sd
 
-7. Write the vewly created SD card image to your SD card. **_WARNING_**, erases
+7. Write the newly created SD card image to your SD card. **_WARNING_**, erases
    all your SD card's data, assuming your SD card appears as /dev/sdc:
 
         # dcfldd if=out/carino.img of=/dev/sdc
 
 Then you just have to insert your SD card in your pcduino nano 3, boot the card
-and voilà ! Now you can hack the code and update it on target. More information
+et voilà ! Now you can hack the code and update it on target. More information
 on the build system and the other useful commands, can be found in the
-documentation for the
-[carino-tools](https://github.com/ncarrier/carino-build_scripts) and the
-[carino-build_scripts](https://github.com/ncarrier/carino-tools) projects. For
-example, you'll be able to compile only one project and automatically update the
-needed files on target, when it's running.
+documentation for the [carino-tools][carino-tools] and the
+[carino-build_scripts][carino-build_scripts] projects. For example, you'll be
+able to compile only one package and automatically update the needed files on
+target, while it's running.
 
 ## Hack the schematics
 
@@ -160,4 +171,6 @@ possibility of changing.
 
 
 [aosp-repo]: https://source.android.com/source/downloading.html#installing-repo
+[carino-build_scripts]: https://github.com/ncarrier/carino-build_scripts
+[carino-tools]: https://github.com/ncarrier/carino-tools
 [debian]: https://www.debian.org/
