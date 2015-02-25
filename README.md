@@ -157,7 +157,32 @@ TODO schematics are not ready yet, this section will be completed soon
 
 ## Hack the hardware
 
-TODO hardware plans are not ready yet, this section will be completed soon
+Since the car model is an early prototype, the mechanical parts used are taken
+from my old lego bricks collection. I used [Lego Digital Designer][ldd] to
+recreate the prototype and export it as building instructions.  
+But because I used old parts, some were missing and couldn't be added to the
+final plan:
+
+* 2x [Technic, Plate 1 x 4 with Toothed Ends](http://www.bricklink.com/catalogItem.asp?P=4263)
+* 1x [Technic, Plate 1 x 10 with Toothed Ends](http://www.bricklink.com/catalogItem.asp?P=2719)
+* 2x [Electric, Motor 4.5V](http://www.bricklink.com/catalogItem.asp?P=6216m)
+* 2x [4.5V Motor Battery Cables](http://www.bricklink.com/catalogItem.asp?S=4-5)
+* 2x [Technic, Steering Arm](http://www.bricklink.com/catalogItem.asp?P=4261)
+
+The current building instructions source file can be found in
+`models/lego\_car\_prototype/car.lxf`. You can hack it using LDD.  
+LDD is a windows program, but run fine on Linux. Once [LDD downloaded][ldd]:
+
+        # apt-get install wine
+        $ wine PATH/TO/LDD/INSTALLER/setupLDD-PC-4_3_8.exe
+
+Follow the instructions and you can use it like a normal Linux application.
+For building the car, the building instructions have been exported in HTML here:
+`models/lego_car_prototype/Building Instructions [car].html`
+Some additional steps have to be taken in order to integrate the servo motor,
+the two DC motors and the missing steering-related parts. Their description will
+come soon. TODO
+
 
 Notes:
 1. all the ressources produced will come with an open licence, mainly (L)GPL for
@@ -174,3 +199,4 @@ possibility of changing.
 [carino-build_scripts]: https://github.com/ncarrier/carino-build_scripts
 [carino-tools]: https://github.com/ncarrier/carino-tools
 [debian]: https://www.debian.org/
+[ldd]: http://ldd.lego.com
