@@ -1,16 +1,15 @@
 BUGS
- * add libarduino to the manifest
- * repair the manifest
- * repair left motor control
+ * investigate on why a tests_servo 6 90 is needed for the direction to work
+   properly
 
 development :
  * create README for each project
  * create an FAQ
  * create a bootstrap script, for bootstrapping the environment for hacking the
    code, the schematics and the mechanics
- * extract libarduino from the tests repository
 
 source distribution, versionning and backup :
+ * integrate the android application in the manifest
  * choose and setup a licence for each project
  * setup an (at least minimal) continuous integration
 
