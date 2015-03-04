@@ -1,6 +1,12 @@
+current tasks being worked on :
+ * choose and setup a licence for each project
+
 BUGS
  * investigate on why a tests_servo 6 90 is needed for the direction to work
    properly
+
+other:
+ * check the eclipse plugin for writing github markdown documents
 
 development :
  * create README for each project
@@ -9,7 +15,7 @@ development :
    code, the schematics and the mechanics
 
 source distribution, versionning and backup :
- * integrate the android application in the manifest
+ * create a release production script
  * choose and setup a licence for each project
  * setup an (at least minimal) continuous integration
 
