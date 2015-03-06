@@ -1,22 +1,19 @@
 current tasks being worked on :
- * choose and setup a licence for each project
+ * remove the use of submodules, put adb/core and adb/extras at level of adbd
 
 BUGS
  * investigate on why a tests_servo 6 90 is needed for the direction to work
    properly
 
-other:
- * check the eclipse plugin for writing github markdown documents
-
 development :
- * create README for each project
  * create an FAQ
  * create a bootstrap script, for bootstrapping the environment for hacking the
    code, the schematics and the mechanics
 
+integration :
+
 source distribution, versionning and backup :
  * create a release production script
- * choose and setup a licence for each project
  * setup an (at least minimal) continuous integration
 
 communication :
