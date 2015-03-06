@@ -161,7 +161,13 @@ target, while it's running.
 
 ## Hack the schematics
 
-TODO schematics are not ready yet, this section will be completed soon
+Schematics are in the schematics subproject. For now, only one schematic is
+available, for the car. The software used is [Fritzing][fritzing]. The fritzing
+files provide 3 views, one for the experimentation, with a breadboard, one for
+the very schematics and the last one for the pcb.  
+Once the schematics and the pcb have been finely tuned, the breadboard view
+isn't usable anymore, which is the case for the car.fzz schematics provided. So
+please use only the schematics and pcb views.
 
 ## Hack the hardware
 
@@ -660,4 +666,5 @@ possibility of changing.
 [carino-build_scripts]: https://github.com/ncarrier/carino-build_scripts
 [carino-tools]: https://github.com/ncarrier/carino-tools
 [debian]: https://www.debian.org/
+[fritzing]: http://fritzing.org/home/
 [ldd]: http://ldd.lego.com
