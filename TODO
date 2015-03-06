@@ -1,5 +1,4 @@
 current tasks being worked on :
- * remove the use of submodules, put adb/core and adb/extras at level of adbd
 
 BUGS
  * investigate on why a tests_servo 6 90 is needed for the direction to work

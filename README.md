@@ -70,9 +70,6 @@ sub-projects it is made of:
 4. Get the source (and a cup of coffee):
 
         $ repo sync
-        $ cd packages/adbd
-        $ git submodule init
-        $ git submodule update
 
 Repo will download for you, the whole carino project, that is all the code, the
 build system, the documentation (from which this README is extracted), the
