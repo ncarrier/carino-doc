@@ -194,8 +194,8 @@ Follow the instructions and you can use it like a normal Linux application.
 For building the car, the building instructions have been exported in HTML here:
 `models/lego_car_prototype/Building Instructions [car].html`
 Some additional steps have to be taken in order to integrate the servo motor,
-the two DC motors and the missing steering-related parts. Their description will
-come soon. TODO
+the two DC motors and the missing steering-related parts. The steps to take are
+described in models/lego\_car\_prototype/additionnal\_instructions.md.
 
 ## GNU Free Documentation License
 
