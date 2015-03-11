@@ -1,6 +1,5 @@
 current tasks being worked on :
  * try to replace the direction servo with a sg90
- * add the photos to the additional building instructions
 
 BUGS
  * investigate on why a tests_servo 6 90 is needed for the direction to work
