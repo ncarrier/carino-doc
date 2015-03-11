@@ -1,5 +1,5 @@
 current tasks being worked on :
- * create a release production script
+ * track what has been installed in final and remove it in -dirclean targets
  * try to replace the direction servo with a sg90
 
 BUGS
@@ -21,16 +21,15 @@ communication :
    french translation ?)
 
 build system :
- * track what has been installed in final and remove it in -dirclean targets
  * study already existing build systems
  * avoid reconfiguring a package when it has already been built
  * dependency handling, even minimalist
  * prevent bau from recreating existing symlinks
 
 platform oss initiatives study :
- * APM/ArduPilot
- * Pixhawk
  * dronecode
+   * APM/ArduPilot
+   * Pixhawk
  * paparazzi uav
  * ROS
  * yarp
