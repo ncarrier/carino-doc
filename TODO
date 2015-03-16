@@ -1,25 +1,25 @@
 current tasks being worked on :
- * try to replace the direction servo with a sg90
+ * create a webapp for controlling the vehicles
 
 BUGS
  * multiple reconnections with infocus M2
 
 development :
- * create an FAQ
- * create a bootstrap script, for bootstrapping the environment for hacking the
-   code, the schematics and the mechanics
 
 integration :
 
 source distribution, versionning and backup :
+ * create a bootstrap script, for bootstrapping the environment for hacking the
+   code, the schematics and the mechanics
  * setup an (at least minimal) continuous integration
 
-communication :
+documentation:
+ * create an FAQ
+ * create the website and generate HTML web pages to populate it from markdown
  * create and populate a base wiki on the project (on github ?, how to manage
    french translation ?)
 
 build system :
- * generate android apk
  * prevent bau from recreating existing symlinks
  * study already existing build systems
  * avoid reconfiguring a package when it has already been built
