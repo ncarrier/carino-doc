@@ -20,6 +20,7 @@ documentation:
    french translation ?)
 
 build system :
+ * make bau create directories prior to pushing
  * prevent bau from recreating existing symlinks
  * study already existing build systems
  * avoid reconfiguring a package when it has already been built
