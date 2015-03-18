@@ -20,6 +20,7 @@ documentation:
    french translation ?)
 
 build system :
+ * separate installation related configuration from the rest
  * make bau create directories prior to pushing
  * prevent bau from recreating existing symlinks
  * study already existing build systems
