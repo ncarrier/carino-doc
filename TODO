@@ -24,8 +24,6 @@ documentation:
    french translation ?)
 
 build system :
- * remove all the direct usages of ${TOOLCHAIN_PREFIX} in build scripts if
-   possible
  * separate vehicles
  * allow a pclinux build
  * separate installation related configuration from the rest
