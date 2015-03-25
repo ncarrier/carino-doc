@@ -1,5 +1,9 @@
 current tasks being worked on :
- * create a webapp for controlling the vehicles, with a link to the android apk
+ * make a console client for controlling the vehicles
+ * create a webapp for controlling the vehicles
+ * identify the perimeter of a minimal protocol library for clients
+   implementation and implement it in libci
+ * make the android application rely on libci
 
 BUGS
  * multiple reconnections with infocus M2
@@ -20,6 +24,10 @@ documentation:
    french translation ?)
 
 build system :
+ * remove all the direct usages of ${TOOLCHAIN_PREFIX} in build scripts if
+   possible
+ * separate vehicles
+ * allow a pclinux build
  * separate installation related configuration from the rest
  * make bau create directories prior to pushing
  * prevent bau from recreating existing symlinks
