@@ -15,6 +15,8 @@ integration :
 source distribution, versionning and backup :
  * create a bootstrap script, for bootstrapping the environment for hacking the
    code, the schematics and the mechanics
+ * get the android sdk and emscripten, in the bootstrap script
+ * add ant in the prerequisites
  * setup an (at least minimal) continuous integration
 
 documentation:
