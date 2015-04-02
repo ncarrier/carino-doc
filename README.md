@@ -57,7 +57,7 @@ sub-projects it is made of:
 2. Get repo from the [Android Open Source project][aosp-repo] :
 
         $ mkdir -p ~/bin
-        $ PATH=~/bin:$PATH
+        $ export PATH=~/bin:$PATH
         $ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
         $ chmod a+x ~/bin/repo
 
