@@ -50,3 +50,10 @@ guide for packaging it.
             -o inotifywait
         # the inotifywait binary produced has the --outfile option
         ./inotifywait --help
+
+## License
+
+    This is part of the Carino project documentation.
+    Copyright (C) 2015
+      Nicolas CARRIER
+    See the file doc/README.md for copying conditions
